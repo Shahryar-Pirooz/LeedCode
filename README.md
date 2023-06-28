@@ -7,7 +7,7 @@ This repository contains my solutions for various LeetCode problems implemented 
 1. Clone the repository:
 
 ```
-git clone https://github.com/Shahryar-Pirooz/leetcode-typescript.git
+git clone https://github.com/Shahryar-Pirooz/LeetCode.git
 ```
 
 2. Install the dependencies:

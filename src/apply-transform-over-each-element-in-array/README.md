@@ -8,14 +8,16 @@ Please solve it without the built-in Array.map method.
 
  
 
-Example 1:
+### Example 1:
 
 Input: arr = [1,2,3], fn = function plusone(n) { return n + 1; }
 Output: [2,3,4]
 Explanation:
 const newArray = map(arr, plusone); // [2,3,4]
 The function increases each value in the array by one. 
-Example 2:
+
+
+### Example 2:
 
 Input: arr = [1,2,3], fn = function plusI(n, i) { return n + i; }
 Output: [1,3,5]
@@ -27,7 +29,7 @@ Output: [42,42,42]
 Explanation: The function always returns 42.
  
 
-Constraints:
+### Constraints:
 
 0 <= arr.length <= 1000
 -109 <= arr[i] <= 109

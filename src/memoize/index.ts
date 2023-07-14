@@ -1,7 +1,17 @@
-type Fn = (...params: any) => any
+type Func = (...params: any) => any
 
-function memoize(fn: Fn): Fn {
-	return function (...args) {}
+function memoize(func: Func): Func {
+	const cacheObject: { [key: string]: any } = {}
+	return function (...args) {
+		const key = JSON.stringify(args)
+		if (key in cacheObject) {
+			return cacheObject[key]
+		} else {
+			const functionOutput = func(...args)
+			cacheObject[key] = functionOutput
+			return functionOutput
+		}
+	}
 }
 
 /**
